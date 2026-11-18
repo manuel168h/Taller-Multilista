@@ -85,7 +85,6 @@ class MultilistaPais:
 
 def cargar_divipola_desde_csv(ruta_csv):
     pais = MultilistaPais("Colombia")
-    # Usamos 'utf-8-sig' para eliminar automáticamente cualquier BOM invisible al inicio del CSV
     with open(ruta_csv, mode='r', encoding='utf-8-sig') as archivo:
         lector = csv.DictReader(archivo)
         for fila in lector:
