@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, render_template
-from multilista import cargar_divipola_desde_csv
+from proyecto_divipola.multilista import cargar_divipola_desde_csv
 
 app = Flask(__name__)
 
